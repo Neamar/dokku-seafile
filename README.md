@@ -46,3 +46,7 @@ CACHES = {
 ```
 
 Then `dokku ps:rebuild seafile` to restart the app.
+
+Do not use dokku's logs feature, you won't get anything. Instead, in your storage mount point, look for a `logs` folder.
+
+> Careful: since we're not using Dokku's standard user, Dokku's DB backup may not work as expected. Test your recovery system before using this in production.
