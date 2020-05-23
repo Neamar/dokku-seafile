@@ -1,4 +1,5 @@
 # dokku-seafile
+> This is very brittle and likely to break. Seafile is not making any effort to build a docker container outside of their own docker-compose solution. They don't provide config tweaks to use different URLs, nor allow for non-root MySQL user; I actually don't recommend using Seafile with Dokku. Even though Nextcloud has other drawbacks, at least it'll work perfectly with Dokku: https://github.com/Neamar/dokku-nextcloud
 
 ## Set up
 First, let's create the services we'll need. You may need to install dokku `mysql` and `memcached` plugins if you don't have them already.
